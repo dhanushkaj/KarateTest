@@ -1,0 +1,17 @@
+package features.soap;
+
+import com.intuit.karate.junit5.Karate;
+
+/**
+ *
+ * @author pthomas3
+ */
+public class SoapRunner{
+	@Karate.Test
+	Karate testApi() {
+		
+		//return Karate.run("postapi").tags("@getUserbyParam").relativeTo(getClass());
+		return Karate.run("soap").relativeTo(getClass());
+		
+	}
+}

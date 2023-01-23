@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("f3ce9819-37eb-4759-b6f6-d2ce6c2190db",{name:"admin"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC3",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.soap.soap</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>dev</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-01-23 09:33:13 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>soap 1.1</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/soap/soap.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">test soap end point</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">soap 1.1</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>5248</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url stgUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">21:32:48.052 karate.env system property was: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request read(&#39;request.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>soap action &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">5184</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">21:32:48.278 request:
+1 &gt; POST https://sxstg.shipxpress.net:443/itrax/clmWebService
+1 &gt; SOAPAction: 
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Content-Length: 2177
+1 &gt; Host: sxstg.shipxpress.net:443
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ser=&quot;https://services.shipperconnect.com&quot;&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;ser:CarsLocationInquiry&gt;
+         &lt;!--Optional:--&gt;
+         &lt;ser:token&gt;eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXZHdNd2t1ZUtmaXlkSmg2aVU4b20wNGVweEQ4cEpKNTlNVzVuLS1aSlFRIn0.eyJleHAiOjE2OTgxNDUwNTUsImlhdCI6MTY2NjYwOTA1NSwianRpIjoiZWM3ZTNjMjktMGIzOC00MWU3LThlMDctNGJmODNlMWU1MTYzIiwiaXNzIjoiaHR0cHM6Ly9zdGctYXV0aC5rYWxlcmlzLm5ldC9yZWFsbXMvc2hpcHhwcmVzcyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkNDI2ZmZmYy01YWYzLTQ4ZTYtOTE2OC02ZmRlNWZjZDNiNjAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0cmF4LWNsbS1zZXJ2aWNlIiwic2Vzc2lvbl9zdGF0ZSI6ImFkMzI3YWQxLWQ2YTctNGI2Ny1iOGUwLTU0M2U1ODA2YWJiMSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLXNoaXB4cHJlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwga2FsZXJpcyBwcm9maWxlIiwic2lkIjoiYWQzMjdhZDEtZDZhNy00YjY3LWI4ZTAtNTQzZTU4MDZhYmIxIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJzeC11c2VyLWlkIjoieG1sY2xlYW5oYXJiZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ4bWxjbGVhbmhhcmJlcl85NTJiNDZjYjI1Mjc5MzcyZGFmNDVjZGQ0YzZjY2FmYyIsImVtYWlsIjoiZGpheWF0aGlsYWthQGthbGVyaXMuY29tIn0.F5j2fkyKm9JNktGEiEOAzbbqz3t_F1VY5ONBeoXsZLz7fMWslPyStQJTrs66Cjs2VF48K8CSH9EP02IdvpK6F7Ng2CuOT00EqyVS7SG5FPFzQuYV9sWKOrW8_l7y6YcRxIxejpLtl3GBBAlnXefHk6aIkd-nUo5FUUvHrqmrRYy7I8bq9gBIRS9kBy3vjN0OI-ja-RVbUEmSrwxrLEA9tFpYK2_RXYQOLDez9Vlth6fHPp0fmwHdtQDjB9R4_0PjELRiNCk1iH24n2CbWSpkH1PbTJrFnE2QPstLW0jz8gC3tiFIA6x2LZzabvx-uQHq9sNStQMAc-rOi5dezQx-Wg&lt;/ser:token&gt;
+         &lt;!--Optional:--&gt;
+         &lt;ser:carsLocationMovementInquiry&gt;&amp;lt;CarsLocationMovementInquiry Organization=&quot;GE Transportation&quot;&amp;gt;&amp;lt;FleetID&amp;gt;TANKCAR&amp;lt;/FleetID&amp;gt;&amp;lt;LastMovementOnly&amp;gt;true&amp;lt;/LastMovementOnly&amp;gt;&amp;lt;Sighting&amp;gt;&amp;lt;StartDate&amp;gt;2022-11-18 00:00&amp;lt;/StartDate&amp;gt;&amp;lt;EndDate&amp;gt;2022-11-19 00:00&amp;lt;/EndDate&amp;gt;&amp;lt;/Sighting&amp;gt;&amp;lt;/CarsLocationMovementInquiry&amp;gt;&lt;/ser:carsLocationMovementInquiry&gt;
+      &lt;/ser:CarsLocationInquiry&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+
+21:32:53.302 java.net.UnknownHostException: sxstg.shipxpress.net: nodename nor servname provided, or not known, http call failed after 5057 milliseconds for url: https://sxstg.shipxpress.net:443/itrax/clmWebService
+21:32:53.312 classpath:features/soap/soap.feature:10
+When soap action &#39;&#39;
+http call failed after 5057 milliseconds for url: https://sxstg.shipxpress.net:443/itrax/clmWebService
+java.net.UnknownHostException: sxstg.shipxpress.net: nodename nor servname provided, or not known
+classpath:features/soap/soap.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match /Envelope/Body/CarsLocationInquiryResponse/CarsLocationInquiryResult/ProcessingOutcome == &#39;Accepted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match /Envelope/Body/CarsLocationInquiryResponse/CarsLocationInquiryResult/ProcessingMessages/Message == &#39;4 ClmRecordsProcessed&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print &#39;response: &#39;, response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

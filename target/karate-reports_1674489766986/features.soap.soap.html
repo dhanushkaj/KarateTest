@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("f3ce9819-37eb-4759-b6f6-d2ce6c2190db",{name:"admin"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC3",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.soap.soap</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>dev</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-01-23 09:28:38 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>soap 1.1</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/soap/soap.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">test soap end point</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">soap 1.1</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5962</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url stgUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">21:28:32.684 karate.env system property was: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request read(&#39;request.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">62</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>soap action &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5870</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">21:28:32.970 request:
+1 &gt; POST https://sxstg.shipxpress.net:443/itrax/clmWebService
+1 &gt; SOAPAction: 
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Content-Length: 2177
+1 &gt; Host: sxstg.shipxpress.net:443
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ser=&quot;https://services.shipperconnect.com&quot;&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;ser:CarsLocationInquiry&gt;
+         &lt;!--Optional:--&gt;
+         &lt;ser:token&gt;eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXZHdNd2t1ZUtmaXlkSmg2aVU4b20wNGVweEQ4cEpKNTlNVzVuLS1aSlFRIn0.eyJleHAiOjE2OTgxNDUwNTUsImlhdCI6MTY2NjYwOTA1NSwianRpIjoiZWM3ZTNjMjktMGIzOC00MWU3LThlMDctNGJmODNlMWU1MTYzIiwiaXNzIjoiaHR0cHM6Ly9zdGctYXV0aC5rYWxlcmlzLm5ldC9yZWFsbXMvc2hpcHhwcmVzcyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkNDI2ZmZmYy01YWYzLTQ4ZTYtOTE2OC02ZmRlNWZjZDNiNjAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0cmF4LWNsbS1zZXJ2aWNlIiwic2Vzc2lvbl9zdGF0ZSI6ImFkMzI3YWQxLWQ2YTctNGI2Ny1iOGUwLTU0M2U1ODA2YWJiMSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLXNoaXB4cHJlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwga2FsZXJpcyBwcm9maWxlIiwic2lkIjoiYWQzMjdhZDEtZDZhNy00YjY3LWI4ZTAtNTQzZTU4MDZhYmIxIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJzeC11c2VyLWlkIjoieG1sY2xlYW5oYXJiZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ4bWxjbGVhbmhhcmJlcl85NTJiNDZjYjI1Mjc5MzcyZGFmNDVjZGQ0YzZjY2FmYyIsImVtYWlsIjoiZGpheWF0aGlsYWthQGthbGVyaXMuY29tIn0.F5j2fkyKm9JNktGEiEOAzbbqz3t_F1VY5ONBeoXsZLz7fMWslPyStQJTrs66Cjs2VF48K8CSH9EP02IdvpK6F7Ng2CuOT00EqyVS7SG5FPFzQuYV9sWKOrW8_l7y6YcRxIxejpLtl3GBBAlnXefHk6aIkd-nUo5FUUvHrqmrRYy7I8bq9gBIRS9kBy3vjN0OI-ja-RVbUEmSrwxrLEA9tFpYK2_RXYQOLDez9Vlth6fHPp0fmwHdtQDjB9R4_0PjELRiNCk1iH24n2CbWSpkH1PbTJrFnE2QPstLW0jz8gC3tiFIA6x2LZzabvx-uQHq9sNStQMAc-rOi5dezQx-Wg&lt;/ser:token&gt;
+         &lt;!--Optional:--&gt;
+         &lt;ser:carsLocationMovementInquiry&gt;&amp;lt;CarsLocationMovementInquiry Organization=&quot;GE Transportation&quot;&amp;gt;&amp;lt;FleetID&amp;gt;TANKCAR&amp;lt;/FleetID&amp;gt;&amp;lt;LastMovementOnly&amp;gt;true&amp;lt;/LastMovementOnly&amp;gt;&amp;lt;Sighting&amp;gt;&amp;lt;StartDate&amp;gt;2022-11-18 00:00&amp;lt;/StartDate&amp;gt;&amp;lt;EndDate&amp;gt;2022-11-19 00:00&amp;lt;/EndDate&amp;gt;&amp;lt;/Sighting&amp;gt;&amp;lt;/CarsLocationMovementInquiry&amp;gt;&lt;/ser:carsLocationMovementInquiry&gt;
+      &lt;/ser:CarsLocationInquiry&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+
+21:28:38.608 response time in milliseconds: 5631
+1 &lt; 200
+1 &lt; Date: Mon, 23 Jan 2023 15:58:38 GMT
+1 &lt; Content-Type: text/xml;charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: AWSALB=U5LBMmJUqMOS2POkComhzyhc+WGrK0KekWTWc2Gw9HcePZxfxLjuT7YLI/YXnDoJxvAi3BEEAQxOrqu3X1RROs2cNyNeWnHN7px2SbPjcZ+S91cn2ce+9ngonosI; Expires=Mon, 30 Jan 2023 15:58:34 GMT; Path=/
+1 &lt; Set-Cookie: AWSALBCORS=U5LBMmJUqMOS2POkComhzyhc+WGrK0KekWTWc2Gw9HcePZxfxLjuT7YLI/YXnDoJxvAi3BEEAQxOrqu3X1RROs2cNyNeWnHN7px2SbPjcZ+S91cn2ce+9ngonosI; Expires=Mon, 30 Jan 2023 15:58:34 GMT; Path=/; SameSite=None; Secure
+1 &lt; Server: Apache
+1 &lt; X-Server-info: Server-1
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Vary: Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Body&gt;&lt;CarsLocationInquiryResponse xmlns=&quot;https://services.shipperconnect.com&quot;&gt;&lt;CarsLocationInquiryResult&gt;&lt;ProcessingOutcome&gt;Accepted&lt;/ProcessingOutcome&gt;&lt;ProcessingMessages&gt;&lt;Message&gt;4 ClmRecordsProcessed&lt;/Message&gt;&lt;/ProcessingMessages&gt;&lt;CarsLocationMovements&gt;&lt;CarLocationMovement&gt;&lt;Car&gt;&lt;Initial&gt;SKSX&lt;/Initial&gt;&lt;Number&gt;3001&lt;/Number&gt;&lt;LoadEmptyStatus&gt;L&lt;/LoadEmptyStatus&gt;&lt;ShipmentWeight&gt;&lt;Value&gt;162000&lt;/Value&gt;&lt;UnitCode&gt;LB&lt;/UnitCode&gt;&lt;Qualifier&gt;&lt;/Qualifier&gt;&lt;/ShipmentWeight&gt;&lt;Specification&gt;&lt;CarType&gt;T106&lt;/CarType&gt;&lt;PoolNumber&gt;0&lt;/PoolNumber&gt;&lt;LoadLimit&gt;196900&lt;/LoadLimit&gt;&lt;TareWeight&gt;89100&lt;/TareWeight&gt;&lt;ActualGallonCapacity&gt;0&lt;/ActualGallonCapacity&gt;&lt;InsideLength&gt;0&lt;/InsideLength&gt;&lt;InsideWidth&gt;0&lt;/InsideWidth&gt;&lt;InsideHeight&gt;0&lt;/InsideHeight&gt;&lt;OutsideLength&gt;722&lt;/OutsideLength&gt;&lt;OutsideWidth&gt;0&lt;/OutsideWidth&gt;&lt;OutsideHeight&gt;183&lt;/OutsideHeight&gt;&lt;/Specification&gt;&lt;Fleets&gt;&lt;Fleet&gt;&lt;ID&gt;TANKCAR&lt;/ID&gt;&lt;ServiceCode&gt;P&lt;/ServiceCode&gt;&lt;/Fleet&gt;&lt;/Fleets&gt;&lt;/Car&gt;&lt;Commodity&gt;&lt;ID&gt;2911415&lt;/ID&gt;&lt;Description&gt;PET LUB OIL&lt;/Description&gt;&lt;/Commodity&gt;&lt;Origin&gt;&lt;City&gt;EAST CHICAGO&lt;/City&gt;&lt;State&gt;IN&lt;/State&gt;&lt;PostalCode&gt;46312&lt;/PostalCode&gt;&lt;SPLC&gt;363510000&lt;/SPLC&gt;&lt;/Origin&gt;&lt;Destination&gt;&lt;City&gt;YAPHANK&lt;/City&gt;&lt;State&gt;NY&lt;/State&gt;&lt;PostalCode&gt;11980&lt;/PostalCode&gt;&lt;SPLC&gt;179690000&lt;/SPLC&gt;&lt;/Destination&gt;&lt;Sighting&gt;&lt;Code&gt;A&lt;/Code&gt;&lt;Move&gt;ARIL&lt;/Move&gt;&lt;City&gt;BRENTWOOD&lt;/City&gt;&lt;State&gt;NY&lt;/State&gt;&lt;SPLC&gt;179575000&lt;/SPLC&gt;&lt;Date&gt;2022-11-18 00:01:00&lt;/Date&gt;&lt;Road&gt;NYA&lt;/Road&gt;&lt;/Sighting&gt;&lt;ETA&gt;&lt;GETransportation&gt;&lt;Current&gt;&lt;Date&gt;2023-01-23 11:02:27.07864&lt;/Date&gt;&lt;/Current&gt;&lt;Original&gt;&lt;Date&gt;2022-11-06 14:24:00&lt;/Date&gt;&lt;/Original&gt;&lt;/GETransportation&gt;&lt;/ETA&gt;&lt;Shipment&gt;&lt;Type&gt;BM&lt;/Type&gt;&lt;Parties&gt;&lt;Party&gt;&lt;Type&gt;SH&lt;/Type&gt;&lt;Name&gt;SAFETY KLEEN SYSTEMS INC&lt;/Name&gt;&lt;/Party&gt;&lt;Party&gt;&lt;Type&gt;CN&lt;/Type&gt;&lt;Name&gt;CIRCLE LUBRICANTS, INC&lt;/Name&gt;&lt;/Party&gt;&lt;Party&gt;&lt;Type&gt;C1&lt;/Type&gt;&lt;Name&gt;BROOKHAVEN RAIL TERMINAL&lt;/Name&gt;&lt;/Party&gt;&lt;/Parties&gt;&lt;References&gt;&lt;Reference&gt;&lt;Type&gt;BL&lt;/Type&gt;&lt;Value&gt;W220509396&lt;/Value&gt;&lt;Date&gt;2022-10-28 08:35:00&lt;/Date&gt;&lt;TimeZone&gt;EDT&lt;/TimeZone&gt;&lt;/Reference&gt;&lt;Reference&gt;&lt;Type&gt;WY&lt;/Type&gt;&lt;Value&gt;165735&lt;/Value&gt;&lt;Date&gt;2022-10-28 08:35:00&lt;/Date&gt;&lt;TimeZone&gt;EDT&lt;/TimeZone&gt;&lt;/Reference&gt;&lt;Reference&gt;&lt;Type&gt;PO&lt;/Type&gt;&lt;Value&gt;2200665415&lt;/Value&gt;&lt;TimeZone&gt;EDT&lt;/TimeZone&gt;&lt;/Reference&gt;&lt;/References&gt;&lt;/Shipment&gt;&lt;TrainID&gt;WYB&lt;/TrainID&gt;&lt;/CarLocationMovement&gt;&lt;CarLocationMovement&gt;&lt;Car&gt;&lt;Initial&gt;SKSX&lt;/Initial&gt;&lt;Number&gt;101014&lt;/Number&gt;&lt;LoadEmptyStatus&gt;E&lt;/LoadEmptyStatus&gt;&lt;ShipmentWeight&gt;&lt;Value&gt;0&lt;/Value&gt;&lt;UnitCode&gt;LB&lt;/UnitCode&gt;&lt;Qualifier&gt;&lt;/Qualifier&gt;&lt;/ShipmentWeight&gt;&lt;Specification&gt;&lt;CarType&gt;T108&lt;/CarType&gt;&lt;PoolNumber&gt;0&lt;/PoolNumber&gt;&lt;LoadLimit&gt;205200&lt;/LoadLimit&gt;&lt;TareWeight&gt;80800&lt;/TareWeight&gt;&lt;ActualGallonCapacity&gt;0&lt;/ActualGallonCapacity&gt;&lt;InsideLength&gt;0&lt;/InsideLength&gt;&lt;InsideWidth&gt;0&lt;/InsideWidth&gt;&lt;InsideHeight&gt;0&lt;/InsideHeight&gt;&lt;OutsideLength&gt;728&lt;/OutsideLength&gt;&lt;OutsideWidth&gt;0&lt;/OutsideWidth&gt;&lt;OutsideHeight&gt;186&lt;/OutsideHeight&gt;&lt;/Specification&gt;&lt;Fleets&gt;&lt;Fleet&gt;&lt;ID&gt;TANKCAR&lt;/ID&gt;&lt;ServiceCode&gt;P&lt;/ServiceCode&gt;&lt;/Fleet&gt;&lt;/Fleets&gt;&lt;/Car&gt;&lt;Commodity&gt;&lt;ID&gt;2911791&lt;/ID&gt;&lt;Description&gt;PETRO OIL,NEC&lt;/Description&gt;&lt;/Commodity&gt;&lt;Origin&gt;&lt;City&gt;EAST CHICAGO&lt;/City&gt;&lt;State&gt;IN&lt;/State&gt;&lt;PostalCode&gt;46312&lt;/PostalCode&gt;&lt;SPLC&gt;363510000&lt;/SPLC&gt;&lt;/Origin&gt;&lt;Destination&gt;&lt;City&gt;DANVILLE&lt;/City&gt;&lt;State&gt;IL&lt;/State&gt;&lt;PostalCode&gt;61832&lt;/PostalCode&gt;&lt;SPLC&gt;&lt;/SPLC&gt;&lt;/Destination&gt;&lt;Sighting&gt;&lt;Code&gt;H&lt;/Code&gt;&lt;Move&gt;HMIS&lt;/Move&gt;&lt;City&gt;DANVILLE&lt;/City&gt;&lt;State&gt;IL&lt;/State&gt;&lt;SPLC&gt;&lt;/SPLC&gt;&lt;Date&gt;2022-11-17 20:18:00&lt;/Date&gt;&lt;Road&gt;CSXT&lt;/Road&gt;&lt;/Sighting&gt;&lt;ETA&gt;&lt;GETransportation&gt;&lt;Current/&gt;&lt;Original/&gt;&lt;/GETransportation&gt;&lt;/ETA&gt;&lt;Shipment&gt;&lt;Type&gt;BM&lt;/Type&gt;&lt;Parties&gt;&lt;Party&gt;&lt;Type&gt;SH&lt;/Type&gt;&lt;Name&gt;SAFETY KLEEN SYSTEMS INC&lt;/Name&gt;&lt;/Party&gt;&lt;Party&gt;&lt;Type&gt;CN&lt;/Type&gt;&lt;Name&gt;RED RIVER VALLEY &amp;amp; WESTERN RAI&lt;/Name&gt;&lt;/Party&gt;&lt;/Parties&gt;&lt;References&gt;&lt;Reference&gt;&lt;Type&gt;BL&lt;/Type&gt;&lt;Value&gt;NA&lt;/Value&gt;&lt;Date&gt;2022-11-14 09:54:00&lt;/Date&gt;&lt;TimeZone&gt;EDT&lt;/TimeZone&gt;&lt;/Reference&gt;&lt;Reference&gt;&lt;Type&gt;WY&lt;/Type&gt;&lt;Value&gt;686988&lt;/Value&gt;&lt;Date&gt;2022-11-14 09:54:00&lt;/Date&gt;&lt;TimeZone&gt;EDT&lt;/TimeZone&gt;&lt;/Reference&gt;&lt;/References&gt;&lt;/Shipment&gt;&lt;TrainID&gt;WYB&lt;/TrainID&gt;&lt;/CarLocationMovement&gt;&lt;CarLocationMovement&gt;&lt;Car&gt;&lt;Initial&gt;TILX&lt;/Initial&gt;&lt;Number&gt;190452&lt;/Number&gt;&lt;LoadEmptyStatus&gt;E&lt;/LoadEmptyStatus&gt;&lt;ShipmentWeight&gt;&lt;Value&gt;0&lt;/Value&gt;&lt;Qualifier&gt;&lt;/Qualifier&gt;&lt;/ShipmentWeight&gt;&lt;Specification&gt;&lt;CarType&gt;T108&lt;/CarType&gt;&lt;PoolNumber&gt;0&lt;/PoolNumber&gt;&lt;LoadLimit&gt;196300&lt;/LoadLimit&gt;&lt;TareWeight&gt;66700&lt;/TareWeight&gt;&lt;ActualGallonCapacity&gt;0&lt;/ActualGallonCapacity&gt;&lt;InsideLength&gt;0&lt;/InsideLength&gt;&lt;InsideWidth&gt;0&lt;/InsideWidth&gt;&lt;InsideHeight&gt;0&lt;/InsideHeight&gt;&lt;OutsideLength&gt;736&lt;/OutsideLength&gt;&lt;OutsideWidth&gt;0&lt;/OutsideWidth&gt;&lt;OutsideHeight&gt;175&lt;/OutsideHeight&gt;&lt;/Specification&gt;&lt;Fleets&gt;&lt;Fleet&gt;&lt;ID&gt;TANKCAR&lt;/ID&gt;&lt;ServiceCode&gt;P&lt;/ServiceCode&gt;&lt;/Fleet&gt;&lt;/Fleets&gt;&lt;/Car&gt;&lt;Commodity&gt;&lt;ID&gt;4025129&lt;/ID&gt;&lt;Description&gt;CRKCS DRAININGS&lt;/Description&gt;&lt;/Commodity&gt;&lt;Origin&gt;&lt;City&gt;INDIANAHA&lt;/City&gt;&lt;State&gt;IN&lt;/State&gt;&lt;/Origin&gt;&lt;Destination&gt;&lt;City&gt;BUTLER&lt;/City&gt;&lt;State&gt;IA&lt;/State&gt;&lt;PostalCode&gt;50670&lt;/PostalCode&gt;&lt;SPLC&gt;532645000&lt;/SPLC&gt;&lt;/Destination&gt;&lt;Sighting&gt;&lt;Code&gt;S&lt;/Code&gt;&lt;Move&gt;STOR&lt;/Move&gt;&lt;City&gt;BUTLER&lt;/City&gt;&lt;State&gt;IA&lt;/State&gt;&lt;SPLC&gt;532645000&lt;/SPLC&gt;&lt;Date&gt;2022-11-18 00:01:00&lt;/Date&gt;&lt;Road&gt;IANR&lt;/Road&gt;&lt;/Sighting&gt;&lt;ETA&gt;&lt;GETransportation&gt;&lt;Current/&gt;&lt;Original/&gt;&lt;/GETransportation&gt;&lt;/ETA&gt;&lt;Shipment&gt;&lt;Type&gt;WY&lt;/Type&gt;&lt;Parties&gt;&lt;Party&gt;&lt;Type&gt;SH&lt;/Type&gt;&lt;Name&gt;UNKNOWN&lt;/Name&gt;&lt;/Party&gt;&lt;Party&gt;&lt;Type&gt;NP&lt;/Type&gt;&lt;Name&gt;CLEANHARBORS&lt;/Name&gt;&lt;/Party&gt;&lt;/Parties&gt;&lt;References/&gt;&lt;/Shipment&gt;&lt;TrainID&gt;MANUAL&lt;/TrainID&gt;&lt;/CarLocationMovement&gt;&lt;CarLocationMovement&gt;&lt;Car&gt;&lt;Initial&gt;GATX&lt;/Initial&gt;&lt;Number&gt;66372&lt;/Number&gt;&lt;LoadEmptyStatus&gt;E&lt;/LoadEmptyStatus&gt;&lt;ShipmentWeight&gt;&lt;Value&gt;0&lt;/Value&gt;&lt;UnitCode&gt;LB&lt;/UnitCode&gt;&lt;Qualifier&gt;&lt;/Qualifier&gt;&lt;/ShipmentWeight&gt;&lt;Specification&gt;&lt;CarType&gt;T107&lt;/CarType&gt;&lt;PoolNumber&gt;0&lt;/PoolNumber&gt;&lt;LoadLimit&gt;0&lt;/LoadLimit&gt;&lt;TareWeight&gt;63800&lt;/TareWeight&gt;&lt;ActualGallonCapacity&gt;0&lt;/ActualGallonCapacity&gt;&lt;InsideLength&gt;0&lt;/InsideLength&gt;&lt;InsideWidth&gt;0&lt;/InsideWidth&gt;&lt;InsideHeight&gt;0&lt;/InsideHeight&gt;&lt;OutsideLength&gt;0&lt;/OutsideLength&gt;&lt;OutsideWidth&gt;0&lt;/OutsideWidth&gt;&lt;OutsideHeight&gt;0&lt;/OutsideHeight&gt;&lt;/Specification&gt;&lt;Fleets&gt;&lt;Fleet&gt;&lt;ID&gt;TANKCAR&lt;/ID&gt;&lt;ServiceCode&gt;P&lt;/ServiceCode&gt;&lt;/Fleet&gt;&lt;/Fleets&gt;&lt;/Car&gt;&lt;Commodity&gt;&lt;ID&gt;4810560&lt;/ID&gt;&lt;Description&gt;WASTE FLAM LIQ&lt;/Description&gt;&lt;/Commodity&gt;&lt;Origin&gt;&lt;City&gt;FLINT&lt;/City&gt;&lt;State&gt;MI&lt;/State&gt;&lt;PostalCode&gt;48502&lt;/PostalCode&gt;&lt;SPLC&gt;315700000&lt;/SPLC&gt;&lt;/Origin&gt;&lt;Destination&gt;&lt;City&gt;MILITARY&lt;/City&gt;&lt;State&gt;KS&lt;/State&gt;&lt;PostalCode&gt;66739&lt;/PostalCode&gt;&lt;SPLC&gt;748537000&lt;/SPLC&gt;&lt;/Destination&gt;&lt;Sighting&gt;&lt;Code&gt;P&lt;/Code&gt;&lt;Move&gt;DPRT&lt;/Move&gt;&lt;City&gt;DENVER&lt;/City&gt;&lt;State&gt;CO&lt;/State&gt;&lt;SPLC&gt;744310000&lt;/SPLC&gt;&lt;Date&gt;2022-11-17 22:25:00&lt;/Date&gt;&lt;Road&gt;UP&lt;/Road&gt;&lt;/Sighting&gt;&lt;ETA&gt;&lt;GETransportation&gt;&lt;Current/&gt;&lt;Original/&gt;&lt;/GETransportation&gt;&lt;/ETA&gt;&lt;Shipment&gt;&lt;Type&gt;BM&lt;/Type&gt;&lt;Parties&gt;&lt;Party&gt;&lt;Type&gt;SH&lt;/Type&gt;&lt;Name&gt;CLEAN HARBORS ENVIROMENTAL SER&lt;/Name&gt;&lt;/Party&gt;&lt;Party&gt;&lt;Type&gt;CN&lt;/Type&gt;&lt;Name&gt;JAYHAWK FINE CHEMICALS CORP&lt;/Name&gt;&lt;/Party&gt;&lt;Party&gt;&lt;Type&gt;AP&lt;/Type&gt;&lt;Name&gt;CLEAN HARBORS ENVIROMENTAL SER&lt;/Name&gt;&lt;/Party&gt;&lt;/Parties&gt;&lt;References&gt;&lt;Reference&gt;&lt;Type&gt;BL&lt;/Type&gt;&lt;Value&gt;NS&lt;/Value&gt;&lt;Date&gt;2022-10-12 05:49:00&lt;/Date&gt;&lt;TimeZone&gt;EDT&lt;/TimeZone&gt;&lt;/Reference&gt;&lt;Reference&gt;&lt;Type&gt;WY&lt;/Type&gt;&lt;Value&gt;244608&lt;/Value&gt;&lt;Date&gt;2022-10-12 05:49:00&lt;/Date&gt;&lt;TimeZone&gt;EDT&lt;/TimeZone&gt;&lt;/Reference&gt;&lt;/References&gt;&lt;/Shipment&gt;&lt;TrainID&gt;WYB&lt;/TrainID&gt;&lt;/CarLocationMovement&gt;&lt;/CarsLocationMovements&gt;&lt;/CarsLocationInquiryResult&gt;&lt;/CarsLocationInquiryResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match /Envelope/Body/CarsLocationInquiryResponse/CarsLocationInquiryResult/ProcessingOutcome == &#39;Accepted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match /Envelope/Body/CarsLocationInquiryResponse/CarsLocationInquiryResult/ProcessingMessages/Message == &#39;4 ClmRecordsProcessed&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;response: &#39;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">21:28:38.648 [print] response:  &lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;S:Body&gt;
+    &lt;CarsLocationInquiryResponse xmlns=&quot;https://services.shipperconnect.com&quot;&gt;
+      &lt;CarsLocationInquiryResult&gt;
+        &lt;ProcessingOutcome&gt;Accepted&lt;/ProcessingOutcome&gt;
+        &lt;ProcessingMessages&gt;
+          &lt;Message&gt;4 ClmRecordsProcessed&lt;/Message&gt;
+        &lt;/ProcessingMessages&gt;
+        &lt;CarsLocationMovements&gt;
+          &lt;CarLocationMovement&gt;
+            &lt;Car&gt;
+              &lt;Initial&gt;SKSX&lt;/Initial&gt;
+              &lt;Number&gt;3001&lt;/Number&gt;
+              &lt;LoadEmptyStatus&gt;L&lt;/LoadEmptyStatus&gt;
+              &lt;ShipmentWeight&gt;
+                &lt;Value&gt;162000&lt;/Value&gt;
+                &lt;UnitCode&gt;LB&lt;/UnitCode&gt;
+                &lt;Qualifier/&gt;
+              &lt;/ShipmentWeight&gt;
+              &lt;Specification&gt;
+                &lt;CarType&gt;T106&lt;/CarType&gt;
+                &lt;PoolNumber&gt;0&lt;/PoolNumber&gt;
+                &lt;LoadLimit&gt;196900&lt;/LoadLimit&gt;
+                &lt;TareWeight&gt;89100&lt;/TareWeight&gt;
+                &lt;ActualGallonCapacity&gt;0&lt;/ActualGallonCapacity&gt;
+                &lt;InsideLength&gt;0&lt;/InsideLength&gt;
+                &lt;InsideWidth&gt;0&lt;/InsideWidth&gt;
+                &lt;InsideHeight&gt;0&lt;/InsideHeight&gt;
+                &lt;OutsideLength&gt;722&lt;/OutsideLength&gt;
+                &lt;OutsideWidth&gt;0&lt;/OutsideWidth&gt;
+                &lt;OutsideHeight&gt;183&lt;/OutsideHeight&gt;
+              &lt;/Specification&gt;
+              &lt;Fleets&gt;
+                &lt;Fleet&gt;
+                  &lt;ID&gt;TANKCAR&lt;/ID&gt;
+                  &lt;ServiceCode&gt;P&lt;/ServiceCode&gt;
+                &lt;/Fleet&gt;
+              &lt;/Fleets&gt;
+            &lt;/Car&gt;
+            &lt;Commodity&gt;
+              &lt;ID&gt;2911415&lt;/ID&gt;
+              &lt;Description&gt;PET LUB OIL&lt;/Description&gt;
+            &lt;/Commodity&gt;
+            &lt;Origin&gt;
+              &lt;City&gt;EAST CHICAGO&lt;/City&gt;
+              &lt;State&gt;IN&lt;/State&gt;
+              &lt;PostalCode&gt;46312&lt;/PostalCode&gt;
+              &lt;SPLC&gt;363510000&lt;/SPLC&gt;
+            &lt;/Origin&gt;
+            &lt;Destination&gt;
+              &lt;City&gt;YAPHANK&lt;/City&gt;
+              &lt;State&gt;NY&lt;/State&gt;
+              &lt;PostalCode&gt;11980&lt;/PostalCode&gt;
+              &lt;SPLC&gt;179690000&lt;/SPLC&gt;
+            &lt;/Destination&gt;
+            &lt;Sighting&gt;
+              &lt;Code&gt;A&lt;/Code&gt;
+              &lt;Move&gt;ARIL&lt;/Move&gt;
+              &lt;City&gt;BRENTWOOD&lt;/City&gt;
+              &lt;State&gt;NY&lt;/State&gt;
+              &lt;SPLC&gt;179575000&lt;/SPLC&gt;
+              &lt;Date&gt;2022-11-18 00:01:00&lt;/Date&gt;
+              &lt;Road&gt;NYA&lt;/Road&gt;
+            &lt;/Sighting&gt;
+            &lt;ETA&gt;
+              &lt;GETransportation&gt;
+                &lt;Current&gt;
+                  &lt;Date&gt;2023-01-23 11:02:27.07864&lt;/Date&gt;
+                &lt;/Current&gt;
+                &lt;Original&gt;
+                  &lt;Date&gt;2022-11-06 14:24:00&lt;/Date&gt;
+                &lt;/Original&gt;
+              &lt;/GETransportation&gt;
+            &lt;/ETA&gt;
+            &lt;Shipment&gt;
+              &lt;Type&gt;BM&lt;/Type&gt;
+              &lt;Parties&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;SH&lt;/Type&gt;
+                  &lt;Name&gt;SAFETY KLEEN SYSTEMS INC&lt;/Name&gt;
+                &lt;/Party&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;CN&lt;/Type&gt;
+                  &lt;Name&gt;CIRCLE LUBRICANTS, INC&lt;/Name&gt;
+                &lt;/Party&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;C1&lt;/Type&gt;
+                  &lt;Name&gt;BROOKHAVEN RAIL TERMINAL&lt;/Name&gt;
+                &lt;/Party&gt;
+              &lt;/Parties&gt;
+              &lt;References&gt;
+                &lt;Reference&gt;
+                  &lt;Type&gt;BL&lt;/Type&gt;
+                  &lt;Value&gt;W220509396&lt;/Value&gt;
+                  &lt;Date&gt;2022-10-28 08:35:00&lt;/Date&gt;
+                  &lt;TimeZone&gt;EDT&lt;/TimeZone&gt;
+                &lt;/Reference&gt;
+                &lt;Reference&gt;
+                  &lt;Type&gt;WY&lt;/Type&gt;
+                  &lt;Value&gt;165735&lt;/Value&gt;
+                  &lt;Date&gt;2022-10-28 08:35:00&lt;/Date&gt;
+                  &lt;TimeZone&gt;EDT&lt;/TimeZone&gt;
+                &lt;/Reference&gt;
+                &lt;Reference&gt;
+                  &lt;Type&gt;PO&lt;/Type&gt;
+                  &lt;Value&gt;2200665415&lt;/Value&gt;
+                  &lt;TimeZone&gt;EDT&lt;/TimeZone&gt;
+                &lt;/Reference&gt;
+              &lt;/References&gt;
+            &lt;/Shipment&gt;
+            &lt;TrainID&gt;WYB&lt;/TrainID&gt;
+          &lt;/CarLocationMovement&gt;
+          &lt;CarLocationMovement&gt;
+            &lt;Car&gt;
+              &lt;Initial&gt;SKSX&lt;/Initial&gt;
+              &lt;Number&gt;101014&lt;/Number&gt;
+              &lt;LoadEmptyStatus&gt;E&lt;/LoadEmptyStatus&gt;
+              &lt;ShipmentWeight&gt;
+                &lt;Value&gt;0&lt;/Value&gt;
+                &lt;UnitCode&gt;LB&lt;/UnitCode&gt;
+                &lt;Qualifier/&gt;
+              &lt;/ShipmentWeight&gt;
+              &lt;Specification&gt;
+                &lt;CarType&gt;T108&lt;/CarType&gt;
+                &lt;PoolNumber&gt;0&lt;/PoolNumber&gt;
+                &lt;LoadLimit&gt;205200&lt;/LoadLimit&gt;
+                &lt;TareWeight&gt;80800&lt;/TareWeight&gt;
+                &lt;ActualGallonCapacity&gt;0&lt;/ActualGallonCapacity&gt;
+                &lt;InsideLength&gt;0&lt;/InsideLength&gt;
+                &lt;InsideWidth&gt;0&lt;/InsideWidth&gt;
+                &lt;InsideHeight&gt;0&lt;/InsideHeight&gt;
+                &lt;OutsideLength&gt;728&lt;/OutsideLength&gt;
+                &lt;OutsideWidth&gt;0&lt;/OutsideWidth&gt;
+                &lt;OutsideHeight&gt;186&lt;/OutsideHeight&gt;
+              &lt;/Specification&gt;
+              &lt;Fleets&gt;
+                &lt;Fleet&gt;
+                  &lt;ID&gt;TANKCAR&lt;/ID&gt;
+                  &lt;ServiceCode&gt;P&lt;/ServiceCode&gt;
+                &lt;/Fleet&gt;
+              &lt;/Fleets&gt;
+            &lt;/Car&gt;
+            &lt;Commodity&gt;
+              &lt;ID&gt;2911791&lt;/ID&gt;
+              &lt;Description&gt;PETRO OIL,NEC&lt;/Description&gt;
+            &lt;/Commodity&gt;
+            &lt;Origin&gt;
+              &lt;City&gt;EAST CHICAGO&lt;/City&gt;
+              &lt;State&gt;IN&lt;/State&gt;
+              &lt;PostalCode&gt;46312&lt;/PostalCode&gt;
+              &lt;SPLC&gt;363510000&lt;/SPLC&gt;
+            &lt;/Origin&gt;
+            &lt;Destination&gt;
+              &lt;City&gt;DANVILLE&lt;/City&gt;
+              &lt;State&gt;IL&lt;/State&gt;
+              &lt;PostalCode&gt;61832&lt;/PostalCode&gt;
+              &lt;SPLC/&gt;
+            &lt;/Destination&gt;
+            &lt;Sighting&gt;
+              &lt;Code&gt;H&lt;/Code&gt;
+              &lt;Move&gt;HMIS&lt;/Move&gt;
+              &lt;City&gt;DANVILLE&lt;/City&gt;
+              &lt;State&gt;IL&lt;/State&gt;
+              &lt;SPLC/&gt;
+              &lt;Date&gt;2022-11-17 20:18:00&lt;/Date&gt;
+              &lt;Road&gt;CSXT&lt;/Road&gt;
+            &lt;/Sighting&gt;
+            &lt;ETA&gt;
+              &lt;GETransportation&gt;
+                &lt;Current/&gt;
+                &lt;Original/&gt;
+              &lt;/GETransportation&gt;
+            &lt;/ETA&gt;
+            &lt;Shipment&gt;
+              &lt;Type&gt;BM&lt;/Type&gt;
+              &lt;Parties&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;SH&lt;/Type&gt;
+                  &lt;Name&gt;SAFETY KLEEN SYSTEMS INC&lt;/Name&gt;
+                &lt;/Party&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;CN&lt;/Type&gt;
+                  &lt;Name&gt;RED RIVER VALLEY &amp;amp; WESTERN RAI&lt;/Name&gt;
+                &lt;/Party&gt;
+              &lt;/Parties&gt;
+              &lt;References&gt;
+                &lt;Reference&gt;
+                  &lt;Type&gt;BL&lt;/Type&gt;
+                  &lt;Value&gt;NA&lt;/Value&gt;
+                  &lt;Date&gt;2022-11-14 09:54:00&lt;/Date&gt;
+                  &lt;TimeZone&gt;EDT&lt;/TimeZone&gt;
+                &lt;/Reference&gt;
+                &lt;Reference&gt;
+                  &lt;Type&gt;WY&lt;/Type&gt;
+                  &lt;Value&gt;686988&lt;/Value&gt;
+                  &lt;Date&gt;2022-11-14 09:54:00&lt;/Date&gt;
+                  &lt;TimeZone&gt;EDT&lt;/TimeZone&gt;
+                &lt;/Reference&gt;
+              &lt;/References&gt;
+            &lt;/Shipment&gt;
+            &lt;TrainID&gt;WYB&lt;/TrainID&gt;
+          &lt;/CarLocationMovement&gt;
+          &lt;CarLocationMovement&gt;
+            &lt;Car&gt;
+              &lt;Initial&gt;TILX&lt;/Initial&gt;
+              &lt;Number&gt;190452&lt;/Number&gt;
+              &lt;LoadEmptyStatus&gt;E&lt;/LoadEmptyStatus&gt;
+              &lt;ShipmentWeight&gt;
+                &lt;Value&gt;0&lt;/Value&gt;
+                &lt;Qualifier/&gt;
+              &lt;/ShipmentWeight&gt;
+              &lt;Specification&gt;
+                &lt;CarType&gt;T108&lt;/CarType&gt;
+                &lt;PoolNumber&gt;0&lt;/PoolNumber&gt;
+                &lt;LoadLimit&gt;196300&lt;/LoadLimit&gt;
+                &lt;TareWeight&gt;66700&lt;/TareWeight&gt;
+                &lt;ActualGallonCapacity&gt;0&lt;/ActualGallonCapacity&gt;
+                &lt;InsideLength&gt;0&lt;/InsideLength&gt;
+                &lt;InsideWidth&gt;0&lt;/InsideWidth&gt;
+                &lt;InsideHeight&gt;0&lt;/InsideHeight&gt;
+                &lt;OutsideLength&gt;736&lt;/OutsideLength&gt;
+                &lt;OutsideWidth&gt;0&lt;/OutsideWidth&gt;
+                &lt;OutsideHeight&gt;175&lt;/OutsideHeight&gt;
+              &lt;/Specification&gt;
+              &lt;Fleets&gt;
+                &lt;Fleet&gt;
+                  &lt;ID&gt;TANKCAR&lt;/ID&gt;
+                  &lt;ServiceCode&gt;P&lt;/ServiceCode&gt;
+                &lt;/Fleet&gt;
+              &lt;/Fleets&gt;
+            &lt;/Car&gt;
+            &lt;Commodity&gt;
+              &lt;ID&gt;4025129&lt;/ID&gt;
+              &lt;Description&gt;CRKCS DRAININGS&lt;/Description&gt;
+            &lt;/Commodity&gt;
+            &lt;Origin&gt;
+              &lt;City&gt;INDIANAHA&lt;/City&gt;
+              &lt;State&gt;IN&lt;/State&gt;
+            &lt;/Origin&gt;
+            &lt;Destination&gt;
+              &lt;City&gt;BUTLER&lt;/City&gt;
+              &lt;State&gt;IA&lt;/State&gt;
+              &lt;PostalCode&gt;50670&lt;/PostalCode&gt;
+              &lt;SPLC&gt;532645000&lt;/SPLC&gt;
+            &lt;/Destination&gt;
+            &lt;Sighting&gt;
+              &lt;Code&gt;S&lt;/Code&gt;
+              &lt;Move&gt;STOR&lt;/Move&gt;
+              &lt;City&gt;BUTLER&lt;/City&gt;
+              &lt;State&gt;IA&lt;/State&gt;
+              &lt;SPLC&gt;532645000&lt;/SPLC&gt;
+              &lt;Date&gt;2022-11-18 00:01:00&lt;/Date&gt;
+              &lt;Road&gt;IANR&lt;/Road&gt;
+            &lt;/Sighting&gt;
+            &lt;ETA&gt;
+              &lt;GETransportation&gt;
+                &lt;Current/&gt;
+                &lt;Original/&gt;
+              &lt;/GETransportation&gt;
+            &lt;/ETA&gt;
+            &lt;Shipment&gt;
+              &lt;Type&gt;WY&lt;/Type&gt;
+              &lt;Parties&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;SH&lt;/Type&gt;
+                  &lt;Name&gt;UNKNOWN&lt;/Name&gt;
+                &lt;/Party&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;NP&lt;/Type&gt;
+                  &lt;Name&gt;CLEANHARBORS&lt;/Name&gt;
+                &lt;/Party&gt;
+              &lt;/Parties&gt;
+              &lt;References/&gt;
+            &lt;/Shipment&gt;
+            &lt;TrainID&gt;MANUAL&lt;/TrainID&gt;
+          &lt;/CarLocationMovement&gt;
+          &lt;CarLocationMovement&gt;
+            &lt;Car&gt;
+              &lt;Initial&gt;GATX&lt;/Initial&gt;
+              &lt;Number&gt;66372&lt;/Number&gt;
+              &lt;LoadEmptyStatus&gt;E&lt;/LoadEmptyStatus&gt;
+              &lt;ShipmentWeight&gt;
+                &lt;Value&gt;0&lt;/Value&gt;
+                &lt;UnitCode&gt;LB&lt;/UnitCode&gt;
+                &lt;Qualifier/&gt;
+              &lt;/ShipmentWeight&gt;
+              &lt;Specification&gt;
+                &lt;CarType&gt;T107&lt;/CarType&gt;
+                &lt;PoolNumber&gt;0&lt;/PoolNumber&gt;
+                &lt;LoadLimit&gt;0&lt;/LoadLimit&gt;
+                &lt;TareWeight&gt;63800&lt;/TareWeight&gt;
+                &lt;ActualGallonCapacity&gt;0&lt;/ActualGallonCapacity&gt;
+                &lt;InsideLength&gt;0&lt;/InsideLength&gt;
+                &lt;InsideWidth&gt;0&lt;/InsideWidth&gt;
+                &lt;InsideHeight&gt;0&lt;/InsideHeight&gt;
+                &lt;OutsideLength&gt;0&lt;/OutsideLength&gt;
+                &lt;OutsideWidth&gt;0&lt;/OutsideWidth&gt;
+                &lt;OutsideHeight&gt;0&lt;/OutsideHeight&gt;
+              &lt;/Specification&gt;
+              &lt;Fleets&gt;
+                &lt;Fleet&gt;
+                  &lt;ID&gt;TANKCAR&lt;/ID&gt;
+                  &lt;ServiceCode&gt;P&lt;/ServiceCode&gt;
+                &lt;/Fleet&gt;
+              &lt;/Fleets&gt;
+            &lt;/Car&gt;
+            &lt;Commodity&gt;
+              &lt;ID&gt;4810560&lt;/ID&gt;
+              &lt;Description&gt;WASTE FLAM LIQ&lt;/Description&gt;
+            &lt;/Commodity&gt;
+            &lt;Origin&gt;
+              &lt;City&gt;FLINT&lt;/City&gt;
+              &lt;State&gt;MI&lt;/State&gt;
+              &lt;PostalCode&gt;48502&lt;/PostalCode&gt;
+              &lt;SPLC&gt;315700000&lt;/SPLC&gt;
+            &lt;/Origin&gt;
+            &lt;Destination&gt;
+              &lt;City&gt;MILITARY&lt;/City&gt;
+              &lt;State&gt;KS&lt;/State&gt;
+              &lt;PostalCode&gt;66739&lt;/PostalCode&gt;
+              &lt;SPLC&gt;748537000&lt;/SPLC&gt;
+            &lt;/Destination&gt;
+            &lt;Sighting&gt;
+              &lt;Code&gt;P&lt;/Code&gt;
+              &lt;Move&gt;DPRT&lt;/Move&gt;
+              &lt;City&gt;DENVER&lt;/City&gt;
+              &lt;State&gt;CO&lt;/State&gt;
+              &lt;SPLC&gt;744310000&lt;/SPLC&gt;
+              &lt;Date&gt;2022-11-17 22:25:00&lt;/Date&gt;
+              &lt;Road&gt;UP&lt;/Road&gt;
+            &lt;/Sighting&gt;
+            &lt;ETA&gt;
+              &lt;GETransportation&gt;
+                &lt;Current/&gt;
+                &lt;Original/&gt;
+              &lt;/GETransportation&gt;
+            &lt;/ETA&gt;
+            &lt;Shipment&gt;
+              &lt;Type&gt;BM&lt;/Type&gt;
+              &lt;Parties&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;SH&lt;/Type&gt;
+                  &lt;Name&gt;CLEAN HARBORS ENVIROMENTAL SER&lt;/Name&gt;
+                &lt;/Party&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;CN&lt;/Type&gt;
+                  &lt;Name&gt;JAYHAWK FINE CHEMICALS CORP&lt;/Name&gt;
+                &lt;/Party&gt;
+                &lt;Party&gt;
+                  &lt;Type&gt;AP&lt;/Type&gt;
+                  &lt;Name&gt;CLEAN HARBORS ENVIROMENTAL SER&lt;/Name&gt;
+                &lt;/Party&gt;
+              &lt;/Parties&gt;
+              &lt;References&gt;
+                &lt;Reference&gt;
+                  &lt;Type&gt;BL&lt;/Type&gt;
+                  &lt;Value&gt;NS&lt;/Value&gt;
+                  &lt;Date&gt;2022-10-12 05:49:00&lt;/Date&gt;
+                  &lt;TimeZone&gt;EDT&lt;/TimeZone&gt;
+                &lt;/Reference&gt;
+                &lt;Reference&gt;
+                  &lt;Type&gt;WY&lt;/Type&gt;
+                  &lt;Value&gt;244608&lt;/Value&gt;
+                  &lt;Date&gt;2022-10-12 05:49:00&lt;/Date&gt;
+                  &lt;TimeZone&gt;EDT&lt;/TimeZone&gt;
+                &lt;/Reference&gt;
+              &lt;/References&gt;
+            &lt;/Shipment&gt;
+            &lt;TrainID&gt;WYB&lt;/TrainID&gt;
+          &lt;/CarLocationMovement&gt;
+        &lt;/CarsLocationMovements&gt;
+      &lt;/CarsLocationInquiryResult&gt;
+    &lt;/CarsLocationInquiryResponse&gt;
+  &lt;/S:Body&gt;
+&lt;/S:Envelope&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

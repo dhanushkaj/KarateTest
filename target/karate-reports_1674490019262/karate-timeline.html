@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/api\/getapi[1:6]","start":1674489767836,"end":1674489792553,"title":"features\/api\/getapi[1:6] 21:32:47.836-21:33:12.553 Get the details of user2"},{"id":2,"group":2,"content":"features\/api\/getapi[2:13]","start":1674489767836,"end":1674489792663,"title":"features\/api\/getapi[2:13] 21:32:47.836-21:33:12.663 Create A person"},{"id":3,"group":3,"content":"features\/api\/getapi[3:31]","start":1674489767836,"end":1674489792460,"title":"features\/api\/getapi[3:31] 21:32:47.836-21:33:12.460 Get the details of user by param"},{"id":4,"group":4,"content":"features\/api\/postapi[1:4]","start":1674489767836,"end":1674489768052,"title":"features\/api\/postapi[1:4] 21:32:47.836-21:32:48.052 This is just test scenario"},{"id":5,"group":5,"content":"features\/api\/postapi[2:8]","start":1674489767836,"end":1674489768039,"title":"features\/api\/postapi[2:8] 21:32:47.836-21:32:48.039 This is just test scenario"},{"id":6,"group":5,"content":"features\/soap\/soap[1:8]","start":1674489768048,"end":1674489773311,"title":"features\/soap\/soap[1:8] 21:32:48.048-21:32:53.311 soap 1.1","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
